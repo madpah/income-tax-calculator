@@ -19,12 +19,12 @@
         "name": "Intermediate rate",
         "rate_percentage": 21.00,
         "start": 12150,
-        "end": 31850
+        "end": 31580
       },
       {
         "name": "Higher rate",
         "rate_percentage": 40.00,
-        "start": 31850,
+        "start": 31580,
         "end": 150000
       },
       {
@@ -47,7 +47,7 @@
       {
         "name": "Higher rate",
         "rate_percentage": 40.00,
-        "start": 31501,
+        "start": 31500,
         "end": 150000
       }
     ]

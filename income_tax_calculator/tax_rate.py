@@ -16,10 +16,11 @@ class TaxRate:
         self._name = name
         self._percentage = rate_percentage
         self._start = start
-        self._end = end
+        if end:
+            self._end = end
 
     @staticmethod
-    def get_tax_due_for_tax_rate(taxable_income, tax_rate):
+    def get_tax_due_for_tax_rate(taxable_income: int, tax_rate: object):
         """
 
         :type taxable_income: float
@@ -35,12 +36,15 @@ class TaxRate:
 
         :type taxable_income: float
         """
-
-        # Determine the amount that is applicable to this TaxRate
+        # Default that this TaxRate is no applicable to the supplied taxable income
         amount_taxable_at_rate = 0
-        if taxable_income > self._start:
-            if taxable_income > self._end:
+
+        # If the total taxable income is inside this Tax Rate
+        if taxable_income > 0 and taxable_income >= self._start:
+            # If this Tax Rate has an upper limit and this taxable income is over this limit
+            if self._end and taxable_income >= self._end:
                 amount_taxable_at_rate = (self._end - self._start)
+            # Else compute the taxable amount within the rate limits
             else:
                 amount_taxable_at_rate = (taxable_income - self._start)
 
@@ -48,6 +52,9 @@ class TaxRate:
 
     def get_percentage(self):
         return self._percentage
+
+    def get_name(self):
+        return self._name
 
     def __repr__(self):
         return '<TaxRate name={}, percentage={}, start={}, end={}>'.format(self._name, self._percentage, self._start,

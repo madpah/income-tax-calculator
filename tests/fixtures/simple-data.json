@@ -12,25 +12,25 @@
       {
         "name": "Basic rate",
         "rate_percentage": 20.00,
-        "start": 2000,
+        "start": 2001,
         "end": 12150
       },
       {
         "name": "Intermediate rate",
         "rate_percentage": 21.00,
-        "start": 12150,
+        "start": 12151,
         "end": 31850
       },
       {
         "name": "Higher rate",
         "rate_percentage": 40.00,
-        "start": 31850,
+        "start": 31851,
         "end": 150000
       },
       {
         "name": "Top rate",
         "rate_percentage": 46.00,
-        "start": 150000
+        "start": 150001
       }
     ]
   },
@@ -47,8 +47,7 @@
       {
         "name": "Higher rate",
         "rate_percentage": 40.00,
-        "start": 31501,
-        "end": 150000
+        "start": 31501
       }
     ]
   }
