@@ -1,0 +1,55 @@
+{
+  "2018": {
+    "name": "2018-2019",
+    "personal_allowance": 11850.00,
+    "rates": [
+      {
+        "name": "Starter rate",
+        "rate_percentage": 19.00,
+        "start": 0,
+        "end": 2000
+      },
+      {
+        "name": "Basic rate",
+        "rate_percentage": 20.00,
+        "start": 2000,
+        "end": 12150
+      },
+      {
+        "name": "Intermediate rate",
+        "rate_percentage": 21.00,
+        "start": 12150,
+        "end": 31850
+      },
+      {
+        "name": "Higher rate",
+        "rate_percentage": 40.00,
+        "start": 31850,
+        "end": 150000
+      },
+      {
+        "name": "Top rate",
+        "rate_percentage": 46.00,
+        "start": 150000
+      }
+    ]
+  },
+  "2017": {
+    "name": "2017-2018",
+    "personal_allowance": 11500.00,
+    "rates": [
+      {
+        "name": "Basic rate",
+        "rate_percentage": 20.00,
+        "start": 0,
+        "end": 31500
+      },
+      {
+        "name": "Higher rate",
+        "rate_percentage": 40.00,
+        "start": 31501,
+        "end": 150000
+      }
+    ]
+  }
+}
