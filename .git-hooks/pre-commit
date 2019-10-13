@@ -1,0 +1,24 @@
+#!/bin/sh
+
+echo 'Enabling Virtual Environment'
+source venv/bin/activate
+
+echo 'Running tests'
+
+python -m unittest discover -s tests/ 
+if [ $? -ne 0 ]; then
+	echo 'Aborting commit (Attempting to commit a repository where the test suite fails)'
+	echo 'Bypass with git commit --no-verify'
+	exit 1
+fi
+
+echo 'Running Lint check for PEP8'
+
+flake8
+if [ $? -ne 0 ]; then
+	echo 'Aborint commit (Attemptig to commit to a repository where linted has raised errors)'
+        echo 'Bypass with git commit --no-verify'
+        exit 1
+fi
+
+exit 0
