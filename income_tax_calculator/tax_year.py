@@ -105,7 +105,7 @@ class TaxYear:
             tax_rate_tax_due = TaxRate.get_tax_due_for_tax_rate(taxable_income=taxable_income, tax_rate=tax_rate)
             print("{}: {} @{}% = {}".format(tax_rate.get_name(), format_financial_figure(
                 tax_rate.get_taxable_amount(taxable_income=taxable_income)), tax_rate.get_percentage(),
-                                            format_financial_figure(tax_rate_tax_due)))
+                format_financial_figure(tax_rate_tax_due)))
 
         print("")
         print("Total Tax Due: {}".format(format_financial_figure(self.get_total_tax_due(gross_income=gross_income))))
