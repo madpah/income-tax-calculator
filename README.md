@@ -1,5 +1,7 @@
 # Income Tax Calculator
 
+[![Build Status](https://travis-ci.org/madpah/income-tax-calculator.svg?branch=master)](https://travis-ci.org/madpah/income-tax-calculator)
+
 This is a sample project and is not intended to be able to calculate tax according to UK or any other territories Income 
 Tax Rules. **Please do not use this to inform on anyone's actual tax position!**
 
