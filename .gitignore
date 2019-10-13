@@ -1,3 +1,6 @@
+# Ignore Python Bytecode Files
+*.pyc
+
 # Ignore Python Virtual Environment(s)
 .venv*
 venv*
