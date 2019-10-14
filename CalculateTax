@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+  echo "Invalid invocation."
+  echo ""
+  echo "Usage: CalculateTax [TAX_YEAR] [GROSS_INCOME]"
+  echo " - TAX-YEAR:      should be a four digit year"
+  echo " - GROSS_INCOME:  should be a whole number with no punctuation"
+  echo ""
+  exit 1
+fi
+
+# Activate Python Virtual Environment
+. venv/bin/activate
+
+# Run Application
+python -m income_tax_calculator.calculator $1 $2
